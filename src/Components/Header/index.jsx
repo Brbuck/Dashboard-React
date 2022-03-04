@@ -7,7 +7,7 @@ import { CgMenuGridR } from "react-icons/cg";
 function Header({ togle }) {
     return (
         <header>
-            <span onClick={togle}><CgMenuGridR /></span>
+            <span onClick={togle} className="menu-button"><CgMenuGridR /></span>
             <div>
                 <span>Hey Admin, welcome back </span>
                 <span><img src={Avatar} alt='avatar' /></span>

@@ -10,9 +10,9 @@ header {
     z-index: 20;
     position: fixed;
 
-    span{
+    .menu-button{
         font-size: 20px;
-        
+        cursor: pointer;
     }
 
     div{

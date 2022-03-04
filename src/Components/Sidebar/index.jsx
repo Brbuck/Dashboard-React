@@ -15,7 +15,7 @@ import { BiLogIn } from "react-icons/bi";
 function Sidebar() {
     return (
         <div className='navbar'>
-            <Link to='/'><span><BsFillPersonFill /></span> customers </Link>
+            <Link to='/customers'><span><BsFillPersonFill /></span> customers </Link>
             <Link to='/'><span><AiFillFileWord /></span> orders</Link>
             <Link to='/'><span><IoAnalytics /></span> analitycs</Link>
             <Link to='/'><span><MdOutlineMarkEmailRead /></span> messages</Link>
