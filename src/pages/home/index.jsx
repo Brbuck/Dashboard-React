@@ -6,7 +6,7 @@ import Layout from "../../Components/Layout";
 function Home() {
   return (
     <Layout>
-      <div>Hello worlds</div>
+      <div className='dashboard'>Dashboard</div>
     </Layout>
   );
 }

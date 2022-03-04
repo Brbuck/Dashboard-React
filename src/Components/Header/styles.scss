@@ -12,7 +12,7 @@ header {
 
     span{
         font-size: 20px;
-        cursor: pointer;
+        
     }
 
     div{
@@ -29,6 +29,7 @@ header {
                     width: 35px;
                     height: 35px;
                     border-radius: 50%;
+                    cursor: pointer;
                 }
             }
         }
