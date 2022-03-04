@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './styles.scss'
 
 //import Sidebar from '../Sidebar'
-//import Header from '../Header'
+import Header from '../Header'
 
 function Layout({ children }) {
     const [click, setClick] = useState(true);
@@ -13,7 +13,7 @@ function Layout({ children }) {
 
     return (
         <div className='container'>
-            {/* <Header togle={togle} /> */}
+            <Header togle={togle} />
             <div className='content'>
                {/*  {
                     click && <Sidebar />
