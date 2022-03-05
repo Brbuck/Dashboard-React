@@ -15,14 +15,14 @@ import { BiLogIn } from "react-icons/bi";
 function Sidebar() {
     return (
         <div className='navbar'>
-            <Link to='/customers'><span><BsFillPersonFill /></span> customers </Link>
-            <Link to='/'><span><AiFillFileWord /></span> orders</Link>
+            <Link to='/add-products'><span><RiAddFill /></span> add product</Link>
             <Link to='/'><span><IoAnalytics /></span> analitycs</Link>
+            <Link to='/customers'><span><BsFillPersonFill /></span> customers </Link>
             <Link to='/'><span><MdOutlineMarkEmailRead /></span> messages</Link>
-            <Link to='/'><span><MdOutlineProductionQuantityLimits /></span> products</Link>
+            <Link to='/'><span><AiFillFileWord /></span> orders</Link>
+            <Link to='/products'><span><MdOutlineProductionQuantityLimits /></span> products</Link>
             <Link to='/'><span><MdOutlineReport /></span> reports</Link>
             <Link to='/'><span><AiTwotoneSetting /></span> settings</Link>
-            <Link to='/add-products'><span><RiAddFill /></span> add product</Link>
             <Link to='/'><span><BiLogIn /></span> log out</Link>
         </div>
     );
