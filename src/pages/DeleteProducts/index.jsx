@@ -48,15 +48,15 @@ function EditProduct() {
           <input
             type="text"
             className="date"
-            {...register("price_product")}
-            defaultValue={modal?.price_product}
+            {...register("price")}
+            defaultValue={modal?.price}
             onKeyUp={soNumero}
           />
           <input
             type="text"
-            {...register("qt_product")}
+            {...register("stock")}
             placeholder="title"
-            defaultValue={modal?.qt_product}
+            defaultValue={modal?.stock}
             onKeyUp={soNumero}
           />
           <div className="buttons">

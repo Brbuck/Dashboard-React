@@ -26,14 +26,26 @@
             height: 120px;
         }
 
-        button{
-            background-color: #1a4fb5;
-            color: #fff;
-            height: 35px;
-            width: 100%;
-            max-width: 200px;
-            cursor: pointer;
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            button{
+                background-color: #1a4fb5;
+                color: #fff;
+                height: 35px;
+                width: 100%;
+                max-width: 200px;
+                cursor: pointer;
+
+                &:nth-child(2){
+                    background-color: rgb(23, 201, 32);
+                    color: #fff;
+                }
+            }
+           
         }
+
 
     }
 }

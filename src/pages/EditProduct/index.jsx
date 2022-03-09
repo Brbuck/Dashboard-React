@@ -4,7 +4,7 @@ import "./styles.scss";
 import Layout from "../../components/Layout";
 import {api} from "../../services/api";
 import {soNumero} from '../../Utils'
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 function EditProduct() {
@@ -23,9 +23,9 @@ function EditProduct() {
 
   const { register, handleSubmit } = useForm();
 
-  async function putProcuct({ name_product, description_product, price_product, qt_product  }) {
+  async function putProcuct({ name_product, description_product, price, stock  }) {
     await api.put(`/produto/${id}`, {
-        name_product, description_product, price_product, qt_product
+        name_product, description_product, price, stock
     })
     navigate('/products')
 }
@@ -50,19 +50,27 @@ function EditProduct() {
           <input
             type="text"
             className="date"
-            {...register("price_product")}
-            defaultValue={modal?.price_product}
-            onKeyUp={soNumero}
+            {...register("price")}
+            defaultValue={modal?.price}
           />
           <input
             type="text"
-            {...register("qt_product")}
+            {...register("stock")}
             placeholder="title"
-            defaultValue={modal?.qt_product}
+            defaultValue={modal?.stock}
             onKeyUp={soNumero}
           />
-          <button type="submit">Confirm</button>
-          <Link to="/products"> &#8592; back</Link>
+           <div className="buttons">
+            <button type="submit">Confirm</button>
+            <button
+              type="button"
+              onClick={() => {
+                navigate("/products");
+              }}
+            >
+              &#8592; back
+            </button>
+          </div>
         </form>
       </div>
     </Layout>

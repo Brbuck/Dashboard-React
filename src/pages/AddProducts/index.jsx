@@ -13,9 +13,9 @@ function AddProducts() {
 
   const { register, handleSubmit } = useForm();
 
-    async function createUser({ name_product, description_product, price_product, qt_product }) {
+    async function createUser({ name_product, description_product, price, stock }) {
     try {
-      await api.post("/produto", { name_product, description_product, price_product, qt_product });
+      await api.post("/produto", { name_product, description_product, price, stock });
       navigate("/products")
      
     } catch (error) {
@@ -31,13 +31,13 @@ function AddProducts() {
         <textarea type="text" {...register("description_product")} placeholder="Description" />
         <input
           type="text"
-          {...register("price_product")}
+          {...register("price")}
           placeholder="Price"
-          onKeyUp={soNumero}
+         /*  onKeyUp={soNumero} */
         />
          <input
           type="text"
-          {...register("qt_product")}
+          {...register("stock")}
           placeholder="Stock"
           onKeyUp={soNumero}
          
