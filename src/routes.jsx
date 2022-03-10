@@ -8,11 +8,13 @@ import EditProduct from './pages/EditProduct';
 import Home from './pages/home'
 import NotFound from './pages/404'
 import Products from './pages/Products';
+import Login from './Components/Login'
 
 function Routers() {
     return (
         <Routes>
-            <Route path='/' element={<Home/>} />
+             <Route path='/' element={<Login/>} />
+            <Route path='/dashboard' element={<Home/>} />
             <Route path='/add-products' element={<AddProducts />} />
             <Route path='/customers' element={<Customers/>} />
             <Route path='/delete-product/:id' element={<DeleteProduct />} />

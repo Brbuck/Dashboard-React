@@ -16,13 +16,13 @@ function Sidebar() {
     return (
         <div className='navbar'>
             <Link to='/add-products'><span><RiAddFill /></span> add product</Link>
-            <Link to='/'><span><IoAnalytics /></span> analitycs</Link>
+            <Link to='/dashboard'><span><IoAnalytics /></span> analitycs</Link>
             <Link to='/customers'><span><BsFillPersonFill /></span> customers </Link>
-            <Link to='/'><span><MdOutlineMarkEmailRead /></span> messages</Link>
-            <Link to='/'><span><AiFillFileWord /></span> orders</Link>
+            <Link to='/dashboard'><span><MdOutlineMarkEmailRead /></span> messages</Link>
+            <Link to='/dashboard'><span><AiFillFileWord /></span> orders</Link>
             <Link to='/products'><span><MdOutlineProductionQuantityLimits /></span> products</Link>
-            <Link to='/'><span><MdOutlineReport /></span> reports</Link>
-            <Link to='/'><span><AiTwotoneSetting /></span> settings</Link>
+            <Link to='/dashboard'><span><MdOutlineReport /></span> reports</Link>
+            <Link to='/dashboard'><span><AiTwotoneSetting /></span> settings</Link>
             <Link to='/'><span><BiLogIn /></span> log out</Link>
         </div>
     );
