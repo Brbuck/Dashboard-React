@@ -10,7 +10,7 @@ function Login() {
     <div className="wrapper-container">
       <div className="container-login">
         <h1>Login</h1>
-        <input type="email" placeholder="email" value="teste@teste.gmail.com" />
+        <input type="email" placeholder="email" value="test.test@gmail.com" />
         <input type="password" placeholder="email" value="123456" />
         <label>
           <input type="checkbox" />

@@ -18,7 +18,7 @@ function Sidebar() {
             <Link to='/add-products'><span><RiAddFill /></span> add product</Link>
             <Link to='/dashboard'><span><IoAnalytics /></span> analitycs</Link>
             <Link to='/customers'><span><BsFillPersonFill /></span> customers </Link>
-            <Link to='/dashboard'><span><MdOutlineMarkEmailRead /></span> messages</Link>
+            <Link to='/messages'><span><MdOutlineMarkEmailRead /></span> messages</Link>
             <Link to='/dashboard'><span><AiFillFileWord /></span> orders</Link>
             <Link to='/products'><span><MdOutlineProductionQuantityLimits /></span> products</Link>
             <Link to='/dashboard'><span><MdOutlineReport /></span> reports</Link>

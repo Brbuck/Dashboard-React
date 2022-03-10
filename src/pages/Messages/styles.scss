@@ -1,0 +1,54 @@
+.messages {
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 100px);
+    padding: 10px 30px;
+    background-color: #fff;
+
+    h1 {
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 5px;
+        background-color: #fff;
+        span {
+            width: 32px;
+            height: 32px;
+            padding: 5px;
+
+            img {
+                width: 100%;
+            }
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            span {
+                width: 100%;
+
+                &:nth-child(1) {
+                    max-width: 300px;
+                }
+                &:nth-child(2) {
+                    max-width: 500px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                &:nth-child(3) {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

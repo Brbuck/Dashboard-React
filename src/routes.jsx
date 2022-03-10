@@ -8,6 +8,7 @@ import EditProduct from './pages/EditProduct';
 import Home from './pages/home'
 import NotFound from './pages/404'
 import Products from './pages/Products';
+import Messages from './pages/Messages'
 import Login from './Components/Login'
 
 function Routers() {
@@ -20,6 +21,7 @@ function Routers() {
             <Route path='/delete-product/:id' element={<DeleteProduct />} />
             <Route path='/edit-product/:id' element={<EditProduct />} />
             <Route path='/products' element={<Products />} />
+            <Route path='/messages' element={<Messages />} />
             <Route path="*" element={<NotFound/>} />
         </Routes>
     );
