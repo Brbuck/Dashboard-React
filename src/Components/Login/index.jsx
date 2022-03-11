@@ -19,7 +19,7 @@ function Login() {
         <button
           type="button"
           onClick={() => {
-            navigate("/dashboard");
+            navigate("/messages");
           }}
         >
           login
