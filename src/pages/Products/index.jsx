@@ -34,7 +34,7 @@ function Products() {
         {product.map((item, index) => (
           <div className="row" key={index}>
             <span>{item?.description_product}</span>
-            <span>R$ {item?.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
+            <span>{item?.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
             <span>{item?.stock}</span>
             <div className="options">
               <span className="edit">
