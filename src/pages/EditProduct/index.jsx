@@ -26,7 +26,9 @@ function EditProduct() {
   async function putProcuct({ name_product, description_product, price, stock  }) {
     await api.put(`/produto/${id}`, {
         name_product, description_product, price, stock
-    })
+    }).then((response) => {
+      alert(response.data.msg);
+    });
     navigate('/products')
 }
 

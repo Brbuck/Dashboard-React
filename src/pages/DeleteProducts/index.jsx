@@ -23,15 +23,17 @@ function EditProduct() {
 
   const { register, handleSubmit } = useForm();
 
-  async function putProcuct() {
-    await api.delete(`/produto/${id}`);
+  async function deleteProcuct() {
+    await api.delete(`/produto/${id}`).then((response) => {
+      alert(response.data.msg);
+    });
     navigate("/products");
   }
 
   return (
     <Layout>
       <div className="wrapper">
-        <form onSubmit={handleSubmit(putProcuct)} className="form-put">
+        <form onSubmit={handleSubmit(deleteProcuct)} className="form-put">
           <input
             type="text"
             {...register("name_product")}
