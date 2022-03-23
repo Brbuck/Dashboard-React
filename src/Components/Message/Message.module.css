@@ -1,0 +1,25 @@
+.message{
+    width: 100%;
+    max-width: 800px;
+    padding: 1em;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    top: 15px;
+    z-index: 100;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.success{
+    color: #1a2e1a;
+    background-color: #aeebb3;
+    border-color: #f3f1f1;
+}
+
+.error{
+    color: #f03023;
+    background-color: #f5e0e0;
+    
+}
